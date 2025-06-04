@@ -9,7 +9,7 @@ class CommentController extends Controller
 {
     public function store(Request $request)  {
         $data=$request->validate([
-            "name" => "required|string",
+            "name" => "required|string|max:200",
             "email" => "required|email",
             "subject" => "required|string|min:10|max:30",
             "message" => "required|string|min:10|max:200",

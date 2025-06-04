@@ -13,6 +13,6 @@ class SubscriberController extends Controller
         ]);
         Subscriber::create($validated_data);
 
-        return back()->with('status','subscribe successfully');
+        return back()->with('status','subscribe make successfully');
     }
 }
